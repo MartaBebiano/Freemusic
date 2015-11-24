@@ -1,0 +1,65 @@
+body {
+  font-size: 13pt; }
+
+h1 {
+  font-size: 3.25em;
+  letter-spacing: -0.025em; }
+
+h2 {
+  font-size: 2em;
+  letter-spacing: -0.015em; }
+
+h3 {
+  font-size: 1.5em;
+  letter-spacing: -0.015em; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0 0 0.75em 0; }
+
+header {
+  margin: 0 0 3em 0; }
+
+header > p {
+  font-size: 1.25em;
+  margin: 0; }
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+#nav a:hover {
+  background: #F4A460; }
+
+#nav a:active {
+  background: #484848; }
+
+#nav a {
+  padding: 0.2em 1em 0.2em 1em;
+  margin: 0.6em 0.2em 0.6em 0.2em;
+  font-weight: 600;
+  border-radius: 8px;
+  -moz-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+  -o-transition: background-color .2s ease-in-out;
+  -ms-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  color: #fff; }
+
+/*********************************************************************************/
+/* Articles                                                                      */
+/*********************************************************************************/
+#top {
+  text-align: left; }
+
+#top .image {
+  width: 20em;
+  height: 20em;
+  margin: 0; }
+
+#top h1 {
+  margin-top: 0.35em; }
+
+#top p {
+  font-size: 1.5em;
+  line-height: 1.75em; }
+
+/*# sourceMappingURL=desktop.css.map */

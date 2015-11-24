@@ -1,0 +1,120 @@
+<html>
+<head>
+ <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <!-- Files Angular js -->
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+ <script src="musicApp.js"></script>
+   
+  <!-- Files css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="sass/style.css"/>
+  <link rel="stylesheet" type="text/css" href="sass/desktop.css"/>
+
+<title>Musicas</title>
+
+</head>
+<body ng-app="musicApp" ng-controller="MusicListCtrl">
+	<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Descrição</a></li>
+					<li><a href="#top2">Lista de Musicas</a></li>
+					<li><a href="#top3">Listas de Concertos</a></li>
+				</ul>
+	</nav>
+	
+	<div class="wrapper first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="8u">
+							<header>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+								<h1><strong>Musica - Descrição</strong></h1>
+								<br>
+								<h4 class="description"> Este Serviço permite o acesso a uma vasta quantidade de novas músicas de um grande número de artistas. É um site para utilizadores de todos os gostos, géneros e idades, que procurem apenas a melhor música recente. Não requer qualquer tipo de pagamento ou inscrição, todos os fãs são bens vindos.</h4>
+								<br>
+							<br>
+							<br>
+							</header>
+							
+						 </div>
+						 
+							
+					</div>
+				</article>
+			</div>
+	
+
+    <div class="wrapper style1 first">
+				<article class="container" id="top2">
+					
+						<div id="top2">
+							<header>
+							<br>
+							<br>
+							<br>
+								<h2><strong>Lista de Musicas</strong></h2>
+								 <li ng-repeat="track in tracks">
+								 <a href="single.html#?index={{$index}}" ng-click="viewTrack($index)">
+								 <h5>{{track.track_title}}</h5>
+								</a>
+								</li>
+							
+							</header>
+							
+							
+						</div>	
+				</article>
+	</div>			
+	
+	<div class="wrapper style2">
+				<article id="top3">
+					<header>
+					<br>
+					<br>
+					<br>
+						<h2><strong>Lista de Concertos</strong></h2>
+					
+						   <div classe="circles">
+								<div class="ch-item ch-img-1">
+										<div class="ch-info">
+										<div class="concert text-center">
+										<h3>7 Dezembro 2015</h3>
+										<p>Recognize</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					   
+								<div class="ch-item ch-img-2">
+										<div class="ch-info">
+										<div class="concert text-center">
+										<h3>10 Dezembro 2015</h3>
+										<p>Grave Dog</p>
+                           
+                        </div>
+                    </div>
+					</div>
+					    
+								<div class="ch-item ch-img-3">
+										<div class="ch-info">
+										<div class="concert text-center">
+										<h3>2 Dezembro 2015</h3>
+										<p>Crystal Mace</p>
+                            </div>
+                        
+                    </div>
+					</div>
+					</div>
+					</header>
+				</article>							
+	</div>						
+</body>
+</html>      
+           	
